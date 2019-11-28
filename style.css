@@ -1,0 +1,315 @@
+video::-internal-media-controls-download-button {
+display:none;
+}
+video::-webkit-media-controls-enclosure {
+overflow:hidden;
+}
+video::-webkit-media-controls-panel {
+width: calc(100% + 30px); /* Adjust if necessary */
+}
+
+#learndash_back_to_lesson{
+	display: none;
+}
+
+.learndash_topic_dots{
+	display: none;
+}
+
+#learndash_mark_complete_button{
+	display: none;
+}
+
+.flexContainer{
+	padding-top:60px;
+	display: flex;
+	justify-content: space-between;
+	height: 60vh;
+}
+
+.sideMenu{
+	width: 30%;
+	margin-right: 10px;
+}
+
+.sideContent{
+	width: 70%;
+	overflow: hidden !important;
+	overflow-y: scroll !important;
+	padding-right: 38px;
+}
+
+.sideContent::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: transparent;
+}
+
+.sideContent::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: transparent;
+}
+
+.sideContent::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: white;
+}
+
+ul.menuList{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	width: 80%;
+	top: 50%;
+	transform: translateY(-50%);
+	border: solid;
+	border-color: white;
+	border-width: 0 3px 0 0;
+}
+
+.guias{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.guia{
+	width: 20%;
+}
+
+.libText{
+	color: white; 
+	text-align: center;
+font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+.acaText{
+	color: white; 
+	text-align: justify;
+font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+
+}
+
+.modulo{
+	display: flex;
+		flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.topico{
+	width: 25%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-bottom: 1vh;
+}
+
+.menuElement{
+	display: inline-block;
+	cursor: pointer;
+	list-style: none;
+	color: white;
+	min-width: 50px;
+	text-align: center;
+	margin:0 auto;
+	padding-bottom: 2vh;
+	font-family: 'Oswald', sans-serif;
+	font-size:31px;
+	font-weight: lighter;
+}
+
+.module .menuElement{
+	font-size: 23px;
+}
+
+.module{
+	display: flex;
+	flex-direction:column;
+	overflow: hidden;
+	max-height: 0;
+	  transition: max-height 0.2s ease-out;
+}
+
+.contentElement{
+	display: none;
+}
+
+.menuAct{
+	font-weight: bolder;
+}
+
+.contentAct{
+	display: block;
+	overflow: hidden;
+	animation-name: contentOn;
+	animation-duration: 0.5s;
+}
+
+@keyframes contentOn {
+    from {opacity: 0.0;}
+    to {opacity: 1.0;}
+}
+
+.et_pb_newsletter_description{
+	align-self: center !important;
+	padding-bottom: 4vh;
+}
+
+.et_pb_newsletter_form{
+	width: 40%;
+	padding-left: 0 !important;
+}
+
+.pmpro_content_message{
+	height: 80vh;
+	align-content: center;
+	background-image: url("https://absolutetradingacademy.com/wp-content/uploads/2018/10/Galaxy-Wallpapers-823-1111.jpg");
+}
+
+.loginBox{
+	position:absolute;
+	height: 40vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.loginText{
+	color: white;
+	text-align: center;
+	align-self: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	margin-bottom:1vh;
+}
+
+
+.pmpro_content_message .loginBox p a.loginButton{
+	display: block;
+	color: white;
+	width: 30%;
+	margin: 0 auto;
+	text-align: center;
+	align-self: center;
+	background: none;
+	border-width: 3px;
+	border-color: white;
+	border: solid;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+}
+
+.pmpro_content_message .loginBox p a.loginButton:hover{
+	background-color: rgba(255,255,255,.2);
+	animation-name: loginHov;
+	animation-duration: 0.1s;
+}
+
+@keyframes loginHov {
+    from {background-color: rgba(255,255,255,0);}
+    to {background-color: rgba(255,255,255,.2);}
+}
+
+/*ESTILO DEL FORMULARIO DE PAGO*/
+
+.wpcf7-text, .wpcf7-textarea, .wpcf7-captchar {
+background-color: #eee !important;
+border: none !important;
+width: 100% !important;
+-moz-border-radius: 0 !important;
+-webkit-border-radius: 0 !important;
+border-radius: 0 !important;
+font-size: 14px;
+color: white !important;
+padding: 16px !important;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+.wpcf7-submit {
+color: white !important;
+margin: 8px auto 0;
+cursor: pointer;
+font-size: 20px;
+font-weight: 500;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+padding: 6px 20px;
+line-height: 1.7em;
+background: transparent;
+border: 2px solid;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-moz-transition: all 0.2s;
+-webkit-transition: all 0.2s;
+transition: all 0.2s;
+}
+.wpcf7-submit:hover { 
+	background-color: rgba(255,255,255,.2); 
+padding: 6px 20px !important; 
+}
+
+.regLabel{
+	color: white;
+}
+
+.widgetCont{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	align-content: center;
+}
+
+.gControl{
+	display: inline-block;
+	width: 15%;
+	margin: 0 0 0 0;
+	vertical-align: top;
+	color: black;	
+}
+
+#tWidget {
+	display: inline-block;
+	width: 100%;
+	height: 131vh;
+	margin: 0 0 0 0;
+}
+
+.optionsBox{
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	top: 50%;
+	transform: translatey(-50%);
+}
+
+.pBox{
+	display: inline-block;
+	width: 40%;
+	font-size: 23px;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+}
+
+.pBox a{
+	color: white !important;
+	text-decoration: none !important;
+}
+
+ 
